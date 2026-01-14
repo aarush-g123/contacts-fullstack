@@ -1,0 +1,9 @@
+{
+  "name": "contacts-fullstack-root",
+  "private": true,
+  "scripts": {
+    "build:frontend": "cd contacts-frontend && npm run build",
+    "copy:build": "node scripts/copy-build.js",
+    "build:fullstack": "npm run build:frontend && npm run copy:build"
+  }
+}
